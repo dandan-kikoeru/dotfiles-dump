@@ -27,6 +27,16 @@
 					<execute>kitty udisksctl mount -b /dev/sdb3</execute>
 				</action>
 			</item>
+			<item label="Enable TearFree">
+				<action name="Execute">
+					<execute>xrandr --output DisplayPort-0 --set TearFree on</execute>
+				</action>
+			</item>
+			<item label="Disable TearFree">
+				<action name="Execute">
+					<execute>xrandr --output DisplayPort-0 --set TearFree off</execute>
+				</action>
+			</item>
 		</menu>
 		<separator/>
 		<separator/>
