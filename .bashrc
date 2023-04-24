@@ -9,7 +9,9 @@ export PATH="$HOME/.local/bin/:$PATH"
 set -o vi
 alias obr="openbox --reconfigure"
 alias grep="grep --color=auto"
-alias cp="cp -i"
-alias mv="mv -i"
-alias rm="rm -i"
-alias sudo="doas"
+alias cp="cp -iv"
+alias mv="mv -iv"
+alias rm="rm -v"
+alias mkdir="mkdir -pv"
+
+eval "$(starship init bash)"
