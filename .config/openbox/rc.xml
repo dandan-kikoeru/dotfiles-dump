@@ -353,7 +353,7 @@
     </keybind>
     <keybind key="XF86Search">
       <action name="Execute">
-        <command>rofi -show run</command>
+        <command>rofi -show drun</command>
       </action>
     </keybind>
     <keybind key="XF86Calculator">
