@@ -318,7 +318,7 @@
     <!-- Keybindings for running applications -->
     <keybind key="W-r">
       <action name="Execute">
-        <command>rofi -show run</command>
+        <command>rofi -show drun</command>
       </action>
     </keybind>
     <keybind key="W-t">
@@ -368,20 +368,23 @@
     </keybind>
     <keybind key="XF86AudioMute">
       <action name="Execute">
-        <command>pactl set-sink-mute @DEFAULT_SINK@ toggle</command>
+	<!--<command>pactl set-sink-mute @DEFAULT_SINK@ toggle</command>-->
+	<command>pamixer -t</command>
       </action>
     </keybind>
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
-        <command>pactl set-sink-volume @DEFAULT_SINK@ -5%</command>
-        </action>
+	<!--<command>pactl set-sink-volume @DEFAULT_SINK@ -5%</command>-->
+	<command>pamixer -d 5</command>
+      </action>
     </keybind>
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
-        <command>pactl set-sink-volume @DEFAULT_SINK@ +5%</command>
-        </action>
+	<!--<command>pactl set-sink-volume @DEFAULT_SINK@ +5%</command>-->
+	<command>pamixer -i 5</command>
+      </action>
     </keybind>
-    <!-- Keybindings for tiling -->
+    <!-- Keybindings for tiling (for 1600x900 with 10px gap or margin)-->
     <keybind key="W-Left">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
@@ -622,7 +625,7 @@
         <action name="Raise"/>
         <action name="Unshade"/>
       </mousebind>
-      <mousebind button="A-Right" action="Drag">
+      <mousebind button="A-Middle" action="Drag">
         <action name="Resize"/>
       </mousebind>
       <mousebind button="A-Middle" action="Press">
