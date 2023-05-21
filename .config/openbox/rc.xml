@@ -265,6 +265,7 @@
       </action>
     </keybind>
     <!-- Keybindings for window switching -->
+    <!--
     <keybind key="A-Tab">
       <action name="NextWindow">
         <finalactions>
@@ -294,6 +295,7 @@
         </finalactions>
       </action>
     </keybind>
+    -->
     <!-- Keybindings for window switching with the arrow keys -->
     <keybind key="W-S-Right">
       <action name="DirectionalCycleWindows">
@@ -368,20 +370,22 @@
     </keybind>
     <keybind key="XF86AudioMute">
       <action name="Execute">
-	<!--<command>pactl set-sink-mute @DEFAULT_SINK@ toggle</command>-->
-	<command>pamixer -t</command>
+      	<command>pamixer -t</command>
       </action>
     </keybind>
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
-	<!--<command>pactl set-sink-volume @DEFAULT_SINK@ -5%</command>-->
-	<command>pamixer -d 5</command>
+	      <command>pamixer -d 5</command>
       </action>
     </keybind>
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
-	<!--<command>pactl set-sink-volume @DEFAULT_SINK@ +5%</command>-->
-	<command>pamixer -i 5</command>
+      	<command>pamixer -i 5</command>
+      </action>
+    </keybind>
+    <keybind key="A-Tab">
+      <action name="Execute">
+        <command>rofi -show window</command>
       </action>
     </keybind>
     <!-- Keybindings for tiling (for 1600x900 with 10px gap or margin)-->
