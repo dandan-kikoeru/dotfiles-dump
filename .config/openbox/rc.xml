@@ -265,7 +265,6 @@
       </action>
     </keybind>
     <!-- Keybindings for window switching -->
-    <!--
     <keybind key="A-Tab">
       <action name="NextWindow">
         <finalactions>
@@ -295,7 +294,6 @@
         </finalactions>
       </action>
     </keybind>
-    -->
     <!-- Keybindings for window switching with the arrow keys -->
     <keybind key="W-S-Right">
       <action name="DirectionalCycleWindows">
@@ -382,12 +380,12 @@
       <action name="Execute">
       	<command>pamixer -i 5</command>
       </action>
-    </keybind>
+      </keybind><!--
     <keybind key="A-Tab">
       <action name="Execute">
         <command>rofi -show window</command>
       </action>
-    </keybind>
+      </keybind>-->
     <!-- Keybindings for tiling (for 1600x900 with 10px gap or margin)-->
     <keybind key="W-Left">
       <action name="Unmaximize"/>

@@ -1,5 +1,4 @@
-tint2 &
+polybar &
 nitrogen --restore &
 picom &
-xset s off -dpms &
 pa-notify &
